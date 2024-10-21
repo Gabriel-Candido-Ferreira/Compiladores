@@ -1,0 +1,35 @@
+<programa> ::= <sequencia_comandos>
+
+<sequencia_comandos> ::= <comando> | <comando> <sequencia_comandos>
+
+<comando> ::= <exercicio> | <condicional> | <repeticao>
+
+<exercicio> ::= "exercicio" <nome_exercicio> "{" <series> "}"
+
+<nome_exercicio> ::= <identificador>
+
+<series> ::= <serie> | <serie> <series>
+
+<serie> ::= "serie" <numero> "{" <repeticoes> "}"
+
+<repeticoes> ::= "repeticao" <numero>
+
+<condicional> ::= "se" <condicao> "entao" <sequencia_comandos> ["senao" <sequencia_comandos>]
+
+<condicao> ::= <comparacao>
+
+<comparacao> ::= <expressao> <operador_relacional> <expressao>
+
+<expressao> ::= <numero> | <identificador>
+
+<operador_relacional> ::= "==" | "!=" | "<" | ">" | "<=" | ">="
+
+<repeticao> ::= "enquanto" <condicao> "{" <sequencia_comandos> "}"
+
+<identificador> ::= <letra> { <letra> | <digito> }
+
+<numero> ::= <digito> { <digito> }
+
+<letra> ::= "a" | "b" | "c" | ... | "z" | "A" | "B" | ... | "Z"
+
+<digito> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
