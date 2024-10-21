@@ -1,0 +1,31 @@
+Exemplo:
+
+exercicio agachamento {
+    serie 1 {
+        repeticao 10
+    }
+    serie 2 {
+        repeticao 12
+    }
+}
+
+se repeticao_completada == 10 entao
+    exercicio supino {
+        serie 1 {
+            repeticao 8
+        }
+    }
+senao
+    exercicio corrida {
+        serie 1 {
+            repeticao 5
+        }
+    }
+
+enquanto repeticao_completada < 10 {
+    exercicio flexao {
+        serie 1 {
+            repeticao 15
+        }
+    }
+}
