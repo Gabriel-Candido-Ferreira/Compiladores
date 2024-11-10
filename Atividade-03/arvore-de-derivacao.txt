@@ -1,0 +1,78 @@
+Programa
+├── Comando (exercicio agachamento { ... })
+│   ├── Palavra-chave: exercicio
+│   ├── Identificador: agachamento
+│   ├── AbreChave
+│   ├── ListaDeSeries
+│   │   ├── Serie
+│   │   │   ├── Palavra-chave: serie
+│   │   │   ├── Número: 1
+│   │   │   ├── AbreChave
+│   │   │   ├── Repeticao
+│   │   │   │   ├── Palavra-chave: repeticao
+│   │   │   │   ├── Número: 10
+│   │   │   └── FechaChave
+│   │   └── Serie
+│   │       ├── Palavra-chave: serie
+│   │       ├── Número: 2
+│   │       ├── AbreChave
+│   │       ├── Repeticao
+│   │       │   ├── Palavra-chave: repeticao
+│   │       │   ├── Número: 12
+│   │       └── FechaChave
+│   └── FechaChave
+├── CondicaoSe
+│   ├── Palavra-chave: se
+│   ├── Condicao (repeticao_completada == 10)
+│   │   ├── Identificador: repeticao_completada
+│   │   ├── OperadorRelacional: ==
+│   │   └── Número: 10
+│   ├── Palavra-chave: entao
+│   ├── Comando (exercicio supino { ... })
+│   │   ├── Palavra-chave: exercicio
+│   │   ├── Identificador: supino
+│   │   ├── AbreChave
+│   │   ├── Serie
+│   │   │   ├── Palavra-chave: serie
+│   │   │   ├── Número: 1
+│   │   │   ├── AbreChave
+│   │   │   ├── Repeticao
+│   │   │   │   ├── Palavra-chave: repeticao
+│   │   │   │   ├── Número: 8
+│   │   │   └── FechaChave
+│   │   └── FechaChave
+│   ├── Palavra-chave: senao
+│   └── Comando (exercicio corrida { ... })
+│       ├── Palavra-chave: exercicio
+│       ├── Identificador: corrida
+│       ├── AbreChave
+│       ├── Serie
+│       │   ├── Palavra-chave: serie
+│       │   ├── Número: 1
+│       │   ├── AbreChave
+│       │   ├── Repeticao
+│       │   │   ├── Palavra-chave: repeticao
+│       │   │   ├── Número: 5
+│       │   └── FechaChave
+│       └── FechaChave
+└── LoopEnquanto
+    ├── Palavra-chave: enquanto
+    ├── Condicao (repeticao_completada < 10)
+    │   ├── Identificador: repeticao_completada
+    │   ├── OperadorRelacional: <
+    │   └── Número: 10
+    ├── AbreChave
+    ├── Comando (exercicio flexao { ... })
+    │   ├── Palavra-chave: exercicio
+    │   ├── Identificador: flexao
+    │   ├── AbreChave
+    │   ├── Serie
+    │   │   ├── Palavra-chave: serie
+    │   │   ├── Número: 1
+    │   │   ├── AbreChave
+    │   │   ├── Repeticao
+    │   │   │   ├── Palavra-chave: repeticao
+    │   │   │   ├── Número: 15
+    │   │   └── FechaChave
+    │   └── FechaChave
+    └── FechaChave
