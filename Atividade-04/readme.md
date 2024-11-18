@@ -1,7 +1,7 @@
 # Atividade 04
 
 ## Descrição Atividade
-Fazer gramática em Antlr da [atividade 02]()
+Fazer gramática em Antlr da [atividade 02](https://github.com/Gabriel-Candido-Ferreira/Compiladores/tree/main/Atividade-02)
 
 ## Alunos
 [Gabriel Cândido Ferreira](https://github.com/Gabriel-Candido-Ferreira)<br>
